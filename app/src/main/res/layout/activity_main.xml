@@ -139,24 +139,6 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="27dp" />
 
-    <Button
-        android:id="@+id/login"
-        style="@style/ButtonStyle"
-        android:layout_width="187dp"
-        android:layout_height="47dp"
-        android:layout_gravity="start"
-        android:layout_marginBottom="104dp"
-        android:background="@color/red"
-        android:backgroundTint="#F35252"
-        android:enabled="false"
-        android:text="@string/registrame"
-        app:icon="@color/red"
-        app:iconTint="@color/red"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
