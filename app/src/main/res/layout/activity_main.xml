@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fase1proyecto.MainActivity">
+
+
+    <EditText
+        android:id="@+id/username6"
+        android:layout_width="254dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="252dp"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/registrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registrate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="29sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <TextView
+        android:id="@+id/perfil1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="@string/vendeCons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registrate" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#DD2C00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/perfil1" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="112dp"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+
+    <TextView
+        android:id="@+id/correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#DD2C00"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/numero"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#DD2C00"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <RadioGroup
+        android:id="@+id/tip_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:checkedButton="@id/sambo"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@id/textView9"
+        app:layout_constraintTop_toBottomOf="@id/textView9">
+        <!-- add RadioButtons here -->
+
+        <RadioButton
+            android:id="@+id/sambo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sambo" />
+
+        <RadioButton
+            android:id="@+id/costa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/costa" />
+
+        <RadioButton
+            android:id="@+id/juanta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jtm" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/username2"
+        android:layout_width="254dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="180dp"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/arrow_button"
+        android:layout_width="32dp"
+        android:layout_height="25dp"
+        android:background="@drawable/arrow_image"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <Button
+        android:id="@+id/login"
+        style="@style/ButtonStyle"
+        android:layout_width="187dp"
+        android:layout_height="47dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="104dp"
+        android:background="@color/red"
+        android:backgroundTint="#F35252"
+        android:enabled="false"
+        android:text="@string/registrame"
+        app:icon="@color/red"
+        app:iconTint="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/campus"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#DD2C00"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
